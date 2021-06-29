@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{pred_output}}</title>
+
+<style>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --secondary-color: #151226;
+  --contrast-color: #BF307F;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: -10;
+  background-color: var(--contrast-color);
+}
+
+.container {
+  display: flex;
+  height: 300vh;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  animation: expand .8s ease forwards;
+  background-color: var(--secondary-color);
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: all .8s ease;
+}
+
+.container_content {
+ width: 50%;
+}
+
+.container_content_inner {
+  width: 80%;
+  margin-left: 80px;
+}
+
+.container_outer_img {
+  margin: 50px;
+  width: 50%;
+  overflow: hidden;
+}   
+    
+.container_img {
+  width: 100%;
+  animation: slideIn 1.5s ease-in-out forwards;
+}
+
+.par {
+  height: auto;
+  overflow: hidden;
+}
+
+p{
+  line-height: 30px;
+  transform: translateY(300px);
+  animation: slideUp .8s ease-in-out forwards .8s;
+}
+
+.btns {
+  height: 100%;
+  position: relative;
+  width: 150px;
+  overflow: hidden;
+}
+
+.btns_more {
+  background: transparent;
+  border: 1px solid var(--contrast-color);
+  border-radius: 50px;
+  padding: 8px 12px;
+  color: #BF307F;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 15px;
+  outline: none;
+  transform: translateY(50px);
+  animation: slideUp .8s ease-in-out  forwards 1s;
+}
+
+.title {
+  overflow: hidden;
+  height: auto;
+}
+
+h2 {
+    font-size: 25px;
+    color: var(--contrast-color);
+    margin-bottom: 20px;
+    transform: translateY(100px);
+    animation: slideUp .8s ease forwards .5s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: translateX(1400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class= 'container'>
+<div class="container_content">
+
+<div class="title">
+  <h1>{{ pred_output }}</h1>
+  
+<br>  
+</div>
+<div class="par">
+<h2>INTRODUCTION</h2>
+
+<p>
+Late blight is a potentially devastating disease of tomato and potato, infecting leaves, stems and fruits of tomato plants.
+The disease spreads quickly in fields and can result in total crop failure if untreated.
+Late blight in potato is a plant disease caused by the pathogenic fungus, Phytophthora infestans. <br> Phytophthora infestans is a plant pathogen, which can severely affect the yield and quality of potatoes by infecting the foliage, stems and potatoes at any stage of crop production.
+</p>
+<br>
+<br>
+<h2>SYMPTOMS OF LATE BLIGHT</h2>
+<p>
+The infection or late blight in potato may occur in any stage of the plant growth. The signs and symptoms of late blight in potato includes the following:
+
+The appearance of watery, light green or yellow blisters on the leaf foliage.
+Lower leaf develops brown, black lesions.
+In certain areas of the plant, leaf blistering may occur.
+Within several days (generally 1-4), leaf rotting occurs by the development of tan coloured blisters (in dry weather) and growth of blue-grey mycelium (in moist weather).
+</p>
+<br>
+<br>
+<h2>EFFECTS OF LATE BLIGHT</h2>
+
+<p>Phytophtora infestans can cause severe damage to the crops of potato by affecting the following:
+
+Leaf or foliage develops spots of different colours during the crop development.
+The tubers will develop of small size.<br>
+It may also cause decay in tubers.
+It reduces productivity as well as the quality of the crop.
+In severe cases, there is a complete loss of crop.</p>
+<br>
+<br>
+<h2>CONTROL MEASURE FOR LATE BLIGHT</h2>
+
+<p>The disease management of late blight in potato includes the following:
+
+1.We must use healthy or resistant varieties of seeds like Kuphri, Alankar etc.
+The plant debris must be cleaned relative to field sanitation.<br>
+To control the infection of late blight, one should employ a sprinkler irrigation technique that allows foliage to dry at regular intervals.
+The application of phosphorous acid to potatoes after harvest and before piling can minimise the occurrence of late blight.<br>
+Harvesting of potatoes must be done in the dry season.</p>
+
+</div>
+
+</div>
+</div>
+</div>
+ <div class="container_outer_img">
+ <div class="img-inner">
+ 
+       </div>
+     </div>
+  </div>
+<div class="overlay"></div>
+
+</body>
+
+</html>
