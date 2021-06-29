@@ -9,6 +9,6 @@ scipy>=0.15.1
 scikit-learn>=0.18
 matplotlib>=1.4.3
 pandas>=0.19
-Flask==1.0.2
+
 Keras==2.1.5
 tensorflow==1.7.0S
