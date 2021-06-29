@@ -10,7 +10,7 @@ from keras.models import load_model
 
 app=Flask(__name__)
 
-run_with_ngrok(app)
+
 
 
 @app.route('/', methods =["GET", "POST"])
