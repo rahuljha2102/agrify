@@ -56,7 +56,7 @@ SQLAlchemy>=1.1.5
 sqlalchemy-migrate==0.10.0
 sqlparse==0.2.2
 Tempita==0.5.2
-tensorflow>=1.12.1
+
 tensorflow-tensorboard==0.1.6
 Theano==0.9.0
 
